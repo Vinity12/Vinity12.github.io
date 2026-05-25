@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html, body {
     height: 100%;
-    margin: 0;
     scroll-behavior: smooth;
     scrollbar-color: red;
 }
@@ -20,11 +24,20 @@ body {
 }
 
 #NavBar {
+    background-color: rgba(2, 15, 30, 0.5);
     position: fixed;
+    border-width: 0 0 2px 0;
+    border-color: rgba(27, 91, 122, 0.3);
+    border-style: solid;
+    backdrop-filter: blur(3px);
+
+    z-index: 10;
+
+    width: 100vw;
+    padding: 0 10% 0 0;
 }
 
 .NavLink {
-    background-color: rgba(2, 15, 30, 0.5);
     color: white;
     text-decoration: none;
     
@@ -32,12 +45,12 @@ body {
 }
 
 .NavLink:hover {
-    background-color: rgba(19, 53, 69, 0.5);
+    background-color: rgba(14, 70, 97, 0.5);
 }
 
 #NavBar, .NavLink {
     display: flex;
-    float: left;
+    justify-content: right;
 
     list-style: none;
 }
@@ -58,12 +71,80 @@ body {
     color: rgb(11, 21, 29);
     font-family: Zaslia;
     font-size: 10vmax;
-}  
-
-#Introduction {
-    margin: 70vh 4vw 7vh 0;
 }
 
-#gap {
-    margin: 0px;
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#Introduction {
+    margin: 7vh 10vw;
+    padding: 2rem;
+
+    background-color: rgb(7, 14, 18);
+    border-radius: 12px;
+}
+
+#Hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 600px;
+}
+
+.Hobby {
+    width: 250px;
+    height: 480px;
+
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(song.png);
+    background-position: center;
+    background-size: cover; 
+    border-radius: 17px;
+    transition: background-image 2s ease-in-out;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    transition: width 0.2s, height 0.2s;
+
+    margin: 12px;
+}
+
+.Hobby:hover {
+    background-image: linear-gradient(to top, rgb(2, 15, 30), 70%, rgba(0, 0, 0, 0)), url(song.png);
+    width: 300px;
+    height: 600px;
+}
+
+.HobbyImage {
+    width: 300px;
+    height: 600px;
+
+    border-radius: 17px;
+
+    object-fit: cover;          
+    object-position: center;
+}
+
+.HobbyText {
+    margin: 40px;
+
+    transition: opacity 0.2s, transform 0.2s;
+
+    opacity: 0;
+}
+
+.Hobby:hover .HobbyText {
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+#spacer {
+    margin: 100px;
 }
