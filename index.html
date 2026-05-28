@@ -7,36 +7,64 @@
     <link rel="stylesheet" href="./stylesheet.css"/>
   </head>
   <body>
-    <ul id="NavBar">
-      <li ><a class="NavLink" href="#Introduction">ABOUT</a></li>
-      <li ><a class="NavLink" href="#Hobbies">HOBBIES</a></li>
-      <li ><a class="NavLink" href="#Projects">PROJECTS</a></li>
-    </ul>
+    <header id="NavBar">
+      <a id="Logo" href="#TitleCard">ASHRAF</a>
+      <div id="Navigator">
+        <a class="NavLink" href="#Introduction">ABOUT</a>
+        <a class="NavLink" href="#HobbySection">HOBBIES</a>
+        <a class="NavLink" href="#ProjectSection">PROJECTS</a>
+      </div>
+    </header>
 
     <h1 id="TitleCard">ASHRAF</h1>
 
     <p id="Introduction">
       Hello! i'm Ashraf. I'm a student planning to become a front-end web developer as well as a game developer
     </p>
-
-    <p id="spacer">...</p>
-
-    <div id="Hobbies">
-      <div class="Hobby">
-        <div class="gradientBG"></div>
-        <p class="HobbyText">I enjoy playing all kinds off games</p>
+    
+    <section id="HobbySection">
+      <p class="SectionTitle">Things I Enjoy</p>
+      <div id="Hobbies">
+        <div class="Hobby">
+          <div class="gradientBG" id="ImgGames"></div>
+          <p class="HobbyText">INDIE GAMES</p>
+        </div>
+        <div class="Hobby">
+          <div class="gradientBG" id="ImgArts"></div>
+          <p class="HobbyText">ARTS</p>
+        </div>
+        <div class="Hobby">
+          <div class="gradientBG" id="ImgMusic"></div>
+          <p class="HobbyText">MUSIC</p>
+        </div>
+        <div class="Hobby">
+          <div class="gradientBG" id="ImgDev"></div>
+          <p class="HobbyText">DEVELOPING GAMES</p>
+        </div>
       </div>
-      <div class="Hobby">
-        <div class="gradientBG"></div>
-        <p class="HobbyText">I enjoy playing all kinds off games</p>
+    </section>
+
+    <section id="ProjectSection">
+      <p class="SectionTitle">Projects</p>
+      <div id="Projects">
+        <div class="Project">
+          <div class="gradientBG"></div>
+          <p class="ProjectDescription">I made a 3D mesh renderer inside of scratch</p>
+        </div>
       </div>
-    </div>
-
-    <p id="spacer">...</p>
-
-    <p id="Projects">
-      I'm currently working on my solo game project called HYPERSPACE.
-    </p>
+    </section>  
+    
+    <footer>
+      <form class="FooterContent" id="ContactMe">
+        <h2 class="info" id="Text">Contact Me</h2>
+        <input type="email" class="info" id="Email" placeholder="Enter your email">
+        <input type="password" class="info" id="Pass" placeholder="Enter your password">
+        <input type="submit" class="info" id="Submit">
+      </form>
+      <div class="FooterContent">
+        IDK WHAT TO FILL
+      </div>
+    </footer>
     <script src="interaction.js"></script>
   </body>
 </html>

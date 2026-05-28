@@ -1,4 +1,4 @@
-const btn = document.getElementById("meow-btn");
+const btn = document.querySelector('.element');
 let clickCount = 0;
 
 function addCounter() {
@@ -7,5 +7,3 @@ function addCounter() {
         btn.innerHTML = `${clickCount.toString()}/10`;
     }
 }
-
-btn.addEventListener("click", addCounter);
