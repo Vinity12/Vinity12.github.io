@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8" />
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0" />
+    <title>My Web </title>
+    <link rel="stylesheet" href="./stylesheet.css"/>
+  </head>
+  <body>
+    <nav id="NavBar">
+      <a id="Logo" href="#TitleCard">ASHRAF</a>
+      <div id="desktopNav">
+        <a class="NavLink" href="#Introduction">ABOUT</a>
+        <a class="NavLink" href="#HobbySection">HOBBIES</a>
+        <a class="NavLink" href="#ProjectSection">PROJECTS</a>
+      </div>
+      <div id="mobileNav">
+        <button id="dropdownBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#e3e3e3">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+        </button>
+        <div class="dropdownContent">
+          <a class="mobileNavLink" href="#Introduction">ABOUT</a>
+          <a class="mobileNavLink" href="#HobbySection">HOBBIES</a>
+          <a class="mobileNavLink" href="#ProjectSection">PROJECTS</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="Introduction">
+      <h1 id="TitleCard">ASHRAF</h1>
+      <p id="IntroText">
+        A student planning to become a front-end web developer as well as a game developer
+      </p>
+    </header>
+    
+    <section id="HobbySection">
+      <p class="SectionTitle">Things I Enjoy</p>
+      <div id="Hobbies">
+        <div class="Hobby">
+          <img src="Images/SongCropped.png" alt="" class="HobbyImg">
+          <div class="GradientOverlay"></div>
+          <p class="HobbyText">INDIE GAMES</p>
+        </div>
+        <div class="Hobby">
+          <img src="Images/Ultrakill-Earthmover.jpg" alt="" class="HobbyImg">
+          <div class="GradientOverlay"></div>
+          <p class="HobbyText">ARTS</p>
+        </div>
+        <div class="Hobby">
+          <img src="Images/MusicPrism.jpg" alt="" class="HobbyImg">
+          <div class="GradientOverlay"></div>
+          <p class="HobbyText">MUSIC</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ProjectSection">
+      <p class="SectionTitle">Projects</p>
+      <div id="Projects">
+        <a class="Project" href="https://scratch.mit.edu/projects/1325017325/">
+          <img src="Images/3D-renderer.jpg" alt="3D Mesh of a Donut" class="ProjectImg">
+          <div class="GradientOverlay"></div>
+          <p class="ProjectDescription">I made a 3D mesh renderer inside of scratch</p>
+        </a>
+      </div>
+    </section>  
+    
+    <footer>
+      <form class="FooterContent" id="ContactMe">
+        <h2 class="info" id="Text">Contact Me</h2>
+        <input type="email" class="info" id="Email" placeholder="Enter your email">
+        <input type="password" class="info" id="Pass" placeholder="Enter your password">
+        <textarea type="text" class="info" id="Comment" placeholder="Enter your password"></textarea>
+        <input type="submit" class="info" id="Submit">
+      </form>
+      <div class="FooterContent">
+        IDK WHAT TO FILL
+      </div>
+    </footer>
+    <script src="interaction.js"></script>
+  </body>
+</html>
