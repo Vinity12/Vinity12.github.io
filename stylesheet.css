@@ -56,7 +56,6 @@ section {
     border-style: solid;
 
     display: flex;
-    align-items: center;
     justify-content: space-around;
 
     width: 100%;
@@ -68,6 +67,7 @@ section {
     font-size: 1.2rem;  
     
     float: left;
+    padding: 1rem;
 }
 
 #mobileNav {
@@ -107,12 +107,18 @@ section {
         display: flex;
         justify-content: right;
         align-items: center;
+
+        transition: padding-bottom 0.2s ease-in-out;
+    }
+
+    #mobileNav:hover {
+        padding-bottom: 20%;
     }
 
     #dropdownBtn {
         border: none;
         outline: none;
-        padding: 14px 16px;
+        padding: 1rem 16px;
         background-color: inherit;
         font-family: inherit;
     }
@@ -122,14 +128,14 @@ section {
 
         visibility: hidden;
         position: absolute;
-        right: 0;
-        top: 100%;
+        top: 33%;
         width: 0;
         z-index: 1;
 
         opacity: 0;
-        transition: opacity 0.8s, width 0.8s ease-in;
+        transition: opacity 1.2s, width 0.8s ease-in;
     }
+
     
     #mobileNav:hover .dropdownContent {
         visibility: visible;
@@ -139,7 +145,7 @@ section {
 
     .mobileNavLink {
         float: none;
-        padding: 8px 16px;
+        padding: 6px 16px;
         text-decoration: none;
         text-align: right;
         display: block;
@@ -185,31 +191,38 @@ section {
 }
 
 .SectionTitle {
-    font-size: calc(2rem + 2vmax);
+    font-size: calc(2.3rem + 1.4vw);;
     font-family: Zaslia;
 
-    padding: 2.2rem;
+    padding: 0 2.2rem;
 }
 
 #HobbySection {
     background-color: rgb(22, 31, 52);
     height: 100vh;
-
-    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    padding: 0;
 }
 
-#Hobbies {
+#Hobbies, #HobbyArea {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    justify-content: center;
+    text-align: center;
+    overflow-x: none;
+}
+
+#HobbyArea {
+    width: max-content;
 }
 
 .Hobby {
-    width: 200px;
+    width: 20vw;
     height: 70vh;
 
     display: flex;
@@ -220,11 +233,15 @@ section {
 
     transition: width 0.2s, height 0.2s;
 
-    margin: 0 12px 50px 12px;
+    margin: 0 12px;
 }
 
-.Hobby:hover {
-    width: 300px;
+#HobbyArea:hover .Hobby{
+    width: 15vw;
+}
+
+#HobbyArea:hover .Hobby:hover {
+    width: 30vw;
 }
 
 .HobbyImg {
@@ -254,7 +271,7 @@ section {
 
 .HobbyText {
     font-family: Zaslia;
-    font-size: 40px;
+    font-size: calc(2rem + 0.8vw);
 
     margin: 40px;
     position: absolute;
@@ -270,6 +287,7 @@ section {
 
 #ProjectSection {
     background-color: rgb(25, 33, 59);
+    height: 100vh;
 
     padding: 0 6%;
 }
