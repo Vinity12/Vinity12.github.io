@@ -13,6 +13,7 @@
         <a class="NavLink" href="#Introduction">ABOUT</a>
         <a class="NavLink" href="#HobbySection">HOBBIES</a>
         <a class="NavLink" href="#ProjectSection">PROJECTS</a>
+        <a class="NavLink" href="#ProficiencySection">PROFICIENCY</a>
       </div>
       <div id="mobileNav">
         <button id="dropdownBtn">
@@ -25,6 +26,7 @@
           <a class="mobileNavLink" href="#Introduction">ABOUT</a>
           <a class="mobileNavLink" href="#HobbySection">HOBBIES</a>
           <a class="mobileNavLink" href="#ProjectSection">PROJECTS</a>
+          <a class="mobileNavLink" href="#ProficiencySection">PROFICIENCY</a>
         </div>
       </div>
     </nav>
@@ -38,16 +40,17 @@
     
     <section id="HobbySection">
       <p class="SectionTitle">Things I Love</p>
+      <div id="HobbyDeco"></div>
       <div id="Hobbies">
         <div id="HobbyArea">
           <div class="Hobby">
             <img src="Images/Second-sentinel.jpg" alt="" class="HobbyImg">
             <div class="GradientOverlay"></div>
-            <div class="HobbyText">
+            <div class="HobbyText"> 
               GAMES
               <p class="InnerParagraph">
                 I love Indie games, i love seeing unique ideas becomes a reality.
-                A game doesn't have to be that, but it can freshen the experience.
+                I'm planning to join a game jam on the future!
               </p>
             </div>
           </div>
@@ -85,21 +88,66 @@
         <a class="Project" href="https://scratch.mit.edu/projects/1325017325/">
           <img src="Images/3D-renderer.jpg" alt="3D Mesh of a Donut" class="ProjectImg">
           <div class="GradientOverlay"></div>
-          <p class="ProjectDescription">I made a 3D mesh renderer inside of scratch</p>
+          <h2 class="ProjectName">3D Renderer in Scratch</h2>
+          <p class="ProjectDescription">
+            I made a 3D mesh renderer using Scratch. This teaches me alot of math and how to render meshes.
+            Had fun creating and might create one using OpenGL.
+          </p>
         </a>
       </div>
-    </section>  
+    </section> 
+
+    <section id="ProficiencySection">
+      <p class="SectionTitle">Proficiencies</p>
+      <div id="Proficiencies">
+        <div id="MainSkills">
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/Ori.jpg" alt="Unity Scene">
+            <h2 class="ProficiencyName">UNITY ENGINE</h2>
+            <p class="ProficiencyDesc">
+              The game engine I use to create games is Unity.
+              It is accessible and i don't need to learn a new language like GDScript.
+            </p>
+          </div>
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/SickArt.jpg" alt="Art">
+            <h2 class="ProficiencyName">FRONT-END WEB</h2>
+            <p class="ProficiencyDesc">
+              I still have alot to learn about creating better UI, animation, etc. But for now this is my first website.
+              I'm also planning to learn Wordpress to speed up creation.
+            </p>
+          </div>
+        </div>
+        <div id="SecondSkills">
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/HTML5.png" alt="C#">
+            <h2 class="ProficiencyName">HTML</h2>
+          </div>
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/CSS3.png" alt="C#">
+            <h2 class="ProficiencyName">CSS</h2>
+          </div>
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/CSharp.png" alt="C#">
+            <h2 class="ProficiencyName">C#</h2>
+          </div>
+          <div class="Proficiency">
+            <img class="ProficiencyImg" src="Images/Java.png" alt="C#">
+            <h2 class="ProficiencyName">Java</h2>
+          </div>  
+        </div>
+      </div>
+    </section>
     
     <footer>
       <form class="FooterContent" id="ContactMe">
         <h2 class="info" id="Text">Contact Me</h2>
-        <input type="email" class="info" id="Email" placeholder="Enter your email">
-        <input type="password" class="info" id="Pass" placeholder="Enter your password">
-        <textarea type="text" class="info" id="Comment" placeholder="Enter your password"></textarea>
-        <input type="submit" class="info" id="Submit">
+        <input type="email" id="Email" placeholder="Your email">
+        <textarea type="text" id="Comment" placeholder="Your Request"></textarea>
+        <input type="submit" id="Submit">
       </form>
-      <div class="FooterContent">
-        IDK WHAT TO FILL
+      <div class="FooterContent" id="Links">
+        <a href="https://github.com/Vinity12/" class="Link"><img class="LinkImg" src="Images/github.png" alt="Github"></a>
       </div>
     </footer>
     <script src="interaction.js"></script>
